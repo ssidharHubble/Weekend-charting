@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weekend Charting Button</title>
+  <style>
+    body { display:flex; height:100vh; justify-content:center; align-items:center; background:#f5f5f5; }
+    button {
+      font-size: 24px;
+      padding: 20px 40px;
+      border-radius: 50%;
+      background: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    button:active { transform: scale(0.95); }
+  </style>
+</head>
+<body>
+  <button onclick="playSound()">Weekend Chatting</button>
+  <audio id="sound" src="weekend_chatting.mp3"></audio>
+  <script>
+    function playSound() {
+      document.getElementById("sound").play();
+    }
+  </script>
+</body>
+</html>
